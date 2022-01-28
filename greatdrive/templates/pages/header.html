@@ -1,0 +1,79 @@
+{% load static %}
+  <div class="preloader">
+    <div class="loader">
+      <div class="shadow"></div>
+      <div class="box"></div>
+    </div>
+  </div>
+
+  <div class="navbar-area">
+    <div class="main-responsive-nav">
+      <div class="container">
+        <div class="main-responsive-menu">
+          <div class="logo">
+            <a href="index.html">
+              <img src="{% static 'images/logos/logo.jpg' %}" alt="logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-navbar">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'images/logos/logo.jpg' %}" alt="logo" class="header-logo">
+          </a>
+          <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  HOME
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  DRIVES
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="{% url 'events'%}" class="nav-link">2022</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="speakers-details.html" class="nav-link">2021</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="speakers-details.html" class="nav-link">2020</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  COMMUNITY
+                  <i class="bx bx-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="nav-item">
+                    <a href="{% url 'events'%}" class="nav-link">Charity</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="speakers-details.html" class="nav-link">Diversification</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="speakers-details.html" class="nav-link">Environment</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">SPONSORS</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
